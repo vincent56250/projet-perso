@@ -1,6 +1,6 @@
 //Nom
 var nom = document.getElementById('InputNom1');
-var missnom = document.getElementById('missnom');
+var missnom1 = document.getElementById('missnom');
 var nomValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
 // Pour valider
 var formValid = document.getElementById('bouton_envoi');
@@ -11,17 +11,17 @@ function validation(event) {
         //Si le champ est vide
         if (nom.validity.valueMissing) {
                 event.preventDefault();
-                missnom.textContent = 'Nom manquant';
-                missnom.style.color = 'orange';
+                missnom1.textContent = 'Nom manquant';
+                missnom1.style.color = 'orange';
                 //Si le format de données est incorrect
         } else if (nomValid.test(nom.value) == false) {
                 event.preventDefault();
-                missnom.textContent = 'Format incorrect';
-                missnom.style.color = 'red';
+                missnom1.textContent = 'Format incorrect';
+                missnom1.style.color = 'red';
 
         } else {
-                missnom.textContent = '✔';
-                missnom.style.color = 'green';
+                missnom1.textContent = '✔';
+                missnom1.style.color = 'green';
         }
 }
 // Prenom
