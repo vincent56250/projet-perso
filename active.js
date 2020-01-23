@@ -1,2 +1,0 @@
-
-menuActive("page")
