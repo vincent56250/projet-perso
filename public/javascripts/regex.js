@@ -26,7 +26,7 @@ function validation(event) {
 }
 // Prenom
 var prenom = document.getElementById('InputPrenom1');
-var missPrenom = document.getElementById('missPrenom');
+var missPrenom1 = document.getElementById('missPrenom');
 var prenomValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
 
 
@@ -36,17 +36,17 @@ function validationPrenom(event) {
         //Si le champ est vide
         if (prenom.validity.valueMissing) {
                 event.preventDefault();
-                missPrenom.textContent = 'Prénom manquant';
-                missPrenom.style.color = 'orange';
+                missPrenom1.textContent = 'Prénom manquant';
+                missPrenom1.style.color = 'orange';
                 //Si le format de données est incorrect
         } else if (prenomValid.test(prenom.value) == false) {
                 event.preventDefault();
-                missPrenom.textContent = 'Format incorrect';
-                missPrenom.style.color = 'red';
+                missPrenom1.textContent = 'Format incorrect';
+                missPrenom1.style.color = 'red';
 
         } else {
-                missPrenom.textContent = '✔';
-                missPrenom.style.color = 'green';
+                missPrenom1.textContent = '✔';
+                missPrenom1.style.color = 'green';
         }
 }
 //Mail

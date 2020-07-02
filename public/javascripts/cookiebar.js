@@ -1,20 +1,20 @@
     //barre de cookie
-let button =document.getElementById("bouton");
-let non= document.getElementById("non")
-//politique d'utilisation
-non.addEventListener('click', redirection)
-button.addEventListener('click', hideCookiebar);
+    let button = document.getElementById("bouton");
+    let non = document.getElementById("non")
+    //politique d'utilisation
+    non.addEventListener('click', redirection)
+    button.addEventListener('click', hideCookiebar);
 
-function redirection() {
+    function redirection() {
 
-    document.location.href="https://www.google.com";
+        document.location.href = "https://www.google.com";
 
-}
+    }
 
-function hideCookiebar() {
+    function hideCookiebar() {
 
-     document.getElementById('cookie-bar').style.display = 'none';
-     
+        document.getElementById('cookie-bar').style.display = 'none';
 
 
-}
+
+    }
