@@ -8,6 +8,16 @@ footer {
     margin-bottom: 15px;
 }
 
+#adressList {
+    list-style-type: none;
+}
+
+#adressList :hover {
+
+    color: blue;
+    cursor: pointer;
+}
+
 .container-fluid .container header figure img {
     display: flex;
     margin: 0 auto;
@@ -45,7 +55,7 @@ h1 {
     margin: 25px 0;
 }
 
-h2{
+h2 {
     font-size: 22px;
 }
 
@@ -148,23 +158,23 @@ main .news .carousel-inner .carousel-caption p a {
     font-weight: bold;
 }
 
-#basdepage aside.liens a:hover{
+#basdepage aside.liens a:hover {
     color: rgb(209, 209, 29);
     font-weight: bold;
 }
 
-.carousel-control-prev .carousel-control-prev-icon{
+.carousel-control-prev .carousel-control-prev-icon {
     background-color: rgb(95, 94, 94);
-    
+
 }
 
-.carousel-control-next .carousel-control-next-icon{
+.carousel-control-next .carousel-control-next-icon {
     background-color: rgb(95, 94, 94);
 }
 
 
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     .container-fluid .container header figure img {
         display: flex;

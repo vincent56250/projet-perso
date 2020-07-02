@@ -1,6 +1,6 @@
 //Nom
 var nom = document.getElementById('InputNom1');
-var missnom = document.getElementById('missnom');
+var missnom1 = document.getElementById('missnom');
 var nomValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
 // Pour valider
 var formValid = document.getElementById('bouton_envoi');
@@ -11,22 +11,22 @@ function validation(event) {
         //Si le champ est vide
         if (nom.validity.valueMissing) {
                 event.preventDefault();
-                missnom.textContent = 'Nom manquant';
-                missnom.style.color = 'orange';
+                missnom1.textContent = 'Nom manquant';
+                missnom1.style.color = 'orange';
                 //Si le format de données est incorrect
         } else if (nomValid.test(nom.value) == false) {
                 event.preventDefault();
-                missnom.textContent = 'Format incorrect';
-                missnom.style.color = 'red';
+                missnom1.textContent = 'Format incorrect';
+                missnom1.style.color = 'red';
 
         } else {
-                missnom.textContent = '✔';
-                missnom.style.color = 'green';
+                missnom1.textContent = '✔';
+                missnom1.style.color = 'green';
         }
 }
 // Prenom
 var prenom = document.getElementById('InputPrenom1');
-var missPrenom = document.getElementById('missPrenom');
+var missPrenom1 = document.getElementById('missPrenom');
 var prenomValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
 
 
@@ -36,17 +36,17 @@ function validationPrenom(event) {
         //Si le champ est vide
         if (prenom.validity.valueMissing) {
                 event.preventDefault();
-                missPrenom.textContent = 'Prénom manquant';
-                missPrenom.style.color = 'orange';
+                missPrenom1.textContent = 'Prénom manquant';
+                missPrenom1.style.color = 'orange';
                 //Si le format de données est incorrect
         } else if (prenomValid.test(prenom.value) == false) {
                 event.preventDefault();
-                missPrenom.textContent = 'Format incorrect';
-                missPrenom.style.color = 'red';
+                missPrenom1.textContent = 'Format incorrect';
+                missPrenom1.style.color = 'red';
 
         } else {
-                missPrenom.textContent = '✔';
-                missPrenom.style.color = 'green';
+                missPrenom1.textContent = '✔';
+                missPrenom1.style.color = 'green';
         }
 }
 //Mail
