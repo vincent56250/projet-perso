@@ -1,14 +1,21 @@
 <?php 
 
 function bdd(){
-    $data = 'mysql:dbname=blog;host=127.0.0.1';
-    $user = 'root';
-    $password = '';
+    try{
+        $host = $_ENV['DB_HOST'];
+        $dbname = $_ENV['DB_NAME'];
+        $user = $_ENV['DB_USER'];
+        $pass = $_ENV['DB_PASSWORD'];     
 
-    try {
-        $bdd = new PDO($data, $user, $password);
-    } catch (PDOException $e) {
-        echo 'Connexion échouée : ' . $e->getMessage();
-    }   
+        
+        $bdd = new PDO(
+            "mysql:host=".$host.";dbname=".$dbname.";charset=utf8", 
+            $user, 
+            $pass
+        );
+
+    }catch(Exception $e){
+        die("Error: " .$e->getMessage());
+    } 
         return $bdd;
 }

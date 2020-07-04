@@ -51,7 +51,7 @@ include_once 'layouts/head.php';
             <hr>
 
         </div>
-
+    </div>
 
 
 

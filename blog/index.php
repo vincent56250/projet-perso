@@ -1,5 +1,13 @@
 <?php
 session_start();
+//autoload.php genere avec composer
+require_once __DIR__. '/../vendor/autoload.php';
+
+if (file_exists(__DIR__. '/../.env')) {
+    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__. '/../');
+    $dotenv->load();
+}
+
 require_once "fonctions/bdd.php";
 include "fonctions/blog.php";
 $bdd = bdd();
@@ -8,6 +16,10 @@ if(!empty($_POST)){
 }else{
     $articles = articles();
 }
+
+
+
+
 
 include 'layouts/head.php';
 include 'layouts/header.php';
