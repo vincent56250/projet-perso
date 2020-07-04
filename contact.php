@@ -76,11 +76,10 @@ include_once 'layouts/head.php';
             </div>
         </div>
     </div>
+</fieldset>
 
 
 
-
-    </fieldset>
     <div class="container">
         <fieldset class="map">
             <div class="row">

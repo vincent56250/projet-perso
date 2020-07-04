@@ -8,13 +8,12 @@ include_once 'layouts/head.php';
 
     <div id="slider">
         <button id="left-arrow" onclick="left">
-            < </button> <div id="wrapper">
+            < </button> < id="wrapper">
 
-    </div>
 
-    <button id="right-arrow" onclick="right">
-        >
-    </button>
+            <button id="right-arrow" onclick="right">
+        > </button>
+    
     </div>
 
 

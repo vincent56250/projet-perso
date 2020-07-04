@@ -12,19 +12,19 @@
                 <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item active bg-muted ">
-                            <a class="nav-link text-" href="index.html">Accueil</a>
+                            <a class="nav-link text-" href="index.php">Accueil</a>
                         </li>
                         <li class="nav-item bg-muted">
-                            <a class="nav-link  text-warning" href="presentation.html">Présentation</a>
+                            <a class="nav-link  text-warning" href="presentation.php">Présentation</a>
                         </li>
                         <li class="nav-item bg-muted">
-                            <a class="nav-link  text-warning" href="boutique.html">Boutique</a>
+                            <a class="nav-link  text-warning" href="boutique.php">Boutique</a>
                         </li>
                         <li class="nav-item bg-muted">
-                            <a class="nav-link  text-warning" href="blog.html">Blog</a>
+                            <a class="nav-link  text-warning" href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item bg-muted">
-                            <a class="nav-link  text-warning" href="contact.html">Contact/Accès</a>
+                            <a class="nav-link  text-warning" href="contact.php">Contact/Accès</a>
                         </li>
                     </ul>
                 </div>
@@ -38,14 +38,14 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-7">
                         <aside class="liens">
-                            <a href="liens.html">-Les ouvertures de
+                            <a href="liens.php">-Les ouvertures de
                                 nouveaux magasins éco-responsables </a>
                         </aside>
                     </div>
                     <div class="col-sm-12 col-lg-5 mx-auto justify-content-center">
                         <aside class="reseaux">
                             <ul>
-                                <li><a href="page404.html"><img src="public/images/logos/facebook.png"></a></li>
+                                <li><a href="page404.php"><img src="public/images/logos/facebook.png"></a></li>
                                 <li><a href="instagram"><img src="public/images/logos/Instagram.png"></a></li>
                             </ul>
                         </aside>
@@ -54,8 +54,8 @@
             </section>
 
 
-            <p><a class="plan" href="sitemap.html">-Plan du site</a></p>
-            <div class="mentions"><a href="mentions.html">
+            <p><a class="plan" href="sitemap.php">-Plan du site</a></p>
+            <div class="mentions"><a href="mentions.php">
                     <p>&copy tous droits réservés Vincent. Mentions légales
                 </a></p>
             </div>
@@ -100,4 +100,4 @@
 
 </body>
 
-</html>
+</php>
